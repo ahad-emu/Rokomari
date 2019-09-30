@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </head>
+    <body>
+        <div class="container header">
+            <div class="row">
+                <div class="col-lg-2 header_height">
+                    <img src="img/rokomari_logo.webp" alt="rokomari_logo" height="37" width="100"/>
+                </div>
+                <div class="col-lg-8 header_height">
+                    <div class="input">
+                        <input type="text" name="search" placeholder="  Search" id="input_search" onclick="input_search()">
+                    </div>
+                    
+                    <div class="search">
+                        <button class="search_button" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-1 header_height">
+                    <div>
+                        <a href="#">
+                            <i class="fa fa-shopping-cart" style="font-size: 40px; margin-top: 5px; color:black"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-1 header_height">
+                    <div>
+                        <button type="button" class="btn btn-default button-cart">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid menu_one">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav-tabs nav menu_bar">
+                        <li class="active"><a href="#">Book</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Gift Finder</a></li>
+                        <li><a href="#">প্রাতিষ্ঠানিক অর্ডার</a></li>
+                        <li><a href="#">Others</a></li>
+                        <li><a href="#">Blog</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container menu_two">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline menu_bar_two nav-justified">
+                        <li><a href="#" onmouseover="first_menu_show()" onmouseout="first_menu_hide()">লেখক</a></li>
+                        <li><a href="#" onmouseover="second_menu_show()" onmouseout="second_menu_hide()">বিষয়</a></li>
+                        <li><a href="#" onmouseover="third_menu_show()" onmouseout="third_menu_hide()">প্রকাশনী</a></li>
+                        <li><a href="#" style="color:#FF9900;">ইসলামী বইমেলা</a></li>
+                        <li><a href="#">অতিরিক্ত ছাড়ের বই</a></li>
+                        <li><a href="#">বেস্টসেলার বই</a></li>
+                        <li><a href="#">বইমেলা ২০১৮</a></li>
+                        <li><a href="#">পশ্চিমবঞ্জের বই</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container"  onmouseover="first_menu_show()" onmouseout="first_menu_hide()">
+            <div class="row hide_one" id="first_menu">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <ul class="list_one">
+                                <li><a href="#">হুমায়ূন আহমেদ</a></li>
+                                <li><a href="#">মুহম্মদ জাফর ইকবাল</a></li>
+                                <li><a href="#">সমরেশ মজুমদার</a></li>
+                                <li><a href="#">রবীন্দ্রনাথ ঠাকুর</a></li>
+                                <li><a href="#">সুনীল গঙ্গোপাধ্যায়</a></li>
+                                <li><a href="#">আনিসুল হক</a></li>
+                                <li><a href="#">শীর্ষেন্দু মুখোপাধ্যায়</a></li>
+                                <li><a href="#">সত্যজিৎ রায়</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="list_one">
+                                <li><a href="#">আহমদ ছফা</a></li>
+                                <li><a href="#">বিভূতিভূষণ বন্দ্যোপাধ্যায়</a></li>
+                                <li><a href="#">সৈয়দ শামসুল হক</a></li>
+                                <li><a href="#">সাদাত হোসাইন</a></li>
+                                <li><a href="#">তামিম শাহরিয়ার সুবিন়</a></li>
+                                <li><a href="#">কাজী নজরুল ইসলাম</a></li>
+                                <li><a href="#">হুমায়ুন আজাদ</a></li>
+                                <li><a href="#">জহির রায়হান</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="list_one">
+                                <li><a href="#">ড্যান ব্রাউন</a></li>
+                                <li><a href="#">চেতন ভগত</a></li>
+                                <li><a href="#">রকিব হাসান</a></li>
+                                <li><a href="#">সৈয়দ মুজতবা আলী</a></li>
+                                <li><a href="#">মানিক বন্দ্যোপাধ্যায়</a></li>
+                                <li><a href="#">বঙ্কিমচন্দ্র চট্টোপাধ্যায়</a></li>
+                                <li><a href="#">আখতারুজ্জামান ইলিয়াস</a></li>
+                                <li><a href="#">ইমদাদুল হক মিলন</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="list_one">
+                                <li><a href="#">সেলিনা হোসেন</a></li>
+                                <li><a href="#">স্টিফেন কিং</a></li>
+                                <li><a href="#">জে. কে. রাওলিং</a></li>
+                                <li><a href="#">কাজী আনোয়ার হোসেন</a></li>
+                                <li><a href="#">সুমন্ত আসলাম</a></li>
+                                <li><a href="#">পাওলো কোয়েলহো</a></li>
+                                <li><a href="#">শওকত ওসমান</a></li>
+                                <li style="list-style-type: none;"><a href="#" style="color: #0397D3;">See More..</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"  onmouseover="second_menu_show()" onmouseout="second_menu_hide()">
+            <div class="row hide_one " id="second_menu">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <ul class="list_one">
+                                <li><a href="#">অতিরিক্ত ছাড়</a></li>
+                                <li><a href="#">কম্পিউটার, ইন্টারনেট, ফ্রিল্যান্সিং ও আউটসোর্সিং</a></li>
+                                <li><a href="#">অনুবাদ</a></li>
+                                <li><a href="#">জীবনী, স্মৃতিচারণ ও সাক্ষাৎকার</a></li>
+                                <li><a href="#">শিশু-কিশোর বই</a></li>
+                                <li><a href="#">ইসলামি</a></li>
+                                <li><a href="#">রাজনীতি</a></li>
+                                <li><a href="#">আত্ম-উন্নয়ন ও মেডিটেশন</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="list_one">
+                                <li><a href="#">গণিত, বিজ্ঞান ও প্রযুক্তি</a></li>
+                                <li><a href="#">মুক্তিযুদ্ধ</a></li>
+                                <li><a href="#">ভর্তি, নিয়োগ ও প্রস্তুতি পরীক্ষা</a></li>
+                                <li><a href="#">উপন্যাস</a></li>
+                                <li><a href="#">রহস্য, ভৌতিক, থ্রিলার ও অ্যাডভেঞ্চার়</a></li>
+                                <li><a href="#">ইঞ্জিনিয়ারিং</a></li>
+                                <li><a href="#">ইতিহাস ও ঐতিহ্য</a></li>
+                                <li><a href="#">পশ্চিমবঙ্গের বই</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2">
+                            <ul class="list_one">
+                                <li><a href="#">পুরস্কারপ্রাপ্ত বই</a></li>
+                                <li><a href="#">স্কুল ও কলেজ বই</a></li>
+                                <li><a href="#">ব্যবসা, বিনিয়োগ</a></li>
+                                <li><a href="#">সায়েন্স ফিকশন</a></li>
+                                <li><a href="#">আইন ও বিচার</a></li>
+                                <li><a href="#">কমিকস, নকশা ও ছবি</a></li>
+                                <li><a href="#">ভ্রমণ ও প্রবাস</a></li>
+                                <li><a href="#">ইউনিভার্সিটি</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="list_one">
+                                <li><a href="#">ভাষা ও অভিধান</a></li>
+                                <li><a href="#">ড্রয়িং, পেইন্টিং ডিজাইন ও ফটোগ্রাফি</a></li>
+                                <li><a href="#">রকমারি নির্বাচিত বই</a></li>
+                                <li><a href="#">স্বাস্থ্য, পরিচর্যা ও রোগ নিরাময়</a></li>
+                                <li><a href="#">মেডিকেল</a></li>
+                                <li><a href="#">প্রফেশনাল, জার্নাল ও রেফারেন্স</a></li>
+                                <li><a href="#">কৃষি ও কৃষক</a></li>
+                                <li style="list-style-type: none;"><a href="#" style="color: #0397D3;">See More..</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"  onmouseover="third_menu_show()" onmouseout="third_menu_hide()">
+            <div class="row hide_one" id="third_menu">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <ul class="list_one">
+                                <li><a href="#">সেবা প্রকাশনী</a></li>
+                                <li><a href="#">প্রথমা প্রকাশন</a></li>
+                                <li><a href="#">বাংলা একাডেমি</a></li>
+                                <li><a href="#">ঐতিহ্য</a></li>
+                                <li><a href="#">ইসলামিক ফাউন্ডেশন</a></li>
+                                <li><a href="#">বাতিঘর প্রকাশনী</a></li>
+                                <li><a href="#">বিশ্বসাহিত্য কেন্দ্র</a></li>
+                                <li><a href="#">অন্যপ্রকাশ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="list_one">
+                                <li><a href="#">আনন্দ পাবলিশার্স (ভারত)</a></li>
+                                <li><a href="#">আদর্শ</a></li>
+                                <li><a href="#">দি ইউনিভার্সিটি প্রেস লিমিটেড(ইউ পি এল)</a></li>
+                                <li><a href="#">দে’জ পাবলিশিং (ভারত)</a></li>
+                                <li><a href="#">পাঞ্জেরী পাবলিকেশন</a></li>
+                                <li><a href="#">সময় প্রকাশন</a></li>
+                                <li><a href="#">তাম্রলিপি</a></li>
+                                <li><a href="#">জ্ঞানকোষ প্রকাশনী</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="list_one">
+                                <li><a href="#">আগামী প্রকাশনী</a></li>
+                                <li><a href="#">পাঠক সমাবেশ</a></li>
+                                <li><a href="#">বিসিএস প্রকাশন</a></li>
+                                <li><a href="#">তাওহীদ পাবলিকেশন্স</a></li>
+                                <li><a href="#">মিত্র ও ঘোষ পাবলিশার্স প্রাঃ লিঃ (ভারত)</a></li>
+                                <li><a href="#">মাকতাবাতুল আযহার</a></li>
+                                <li><a href="#">অনন্যা</a></li>
+                                <li><a href="#">সিসটেক পাবলিকেশন্স</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2">
+                            <ul class="list_one">
+                                <li><a href="#">সন্দেশ</a></li>
+                                <li><a href="#">ঢাকা কমিক্স</a></li>
+                                <li><a href="#">হারপারকলিন্স পাবলিশার্স</a></li>
+                                <li><a href="#">বিজ্ঞান একাডেমী</a></li>
+                                <li><a href="#">এমদাদিয়া লাইব্রেরী</a></li>
+                                <li><a href="#">পিয়ারসন</a></li>
+                                <li><a href="#">লেকচার</a></li>
+                                <li style="list-style-type: none;"><a href="#" style="color: #0397D3;">See More..</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container background_image">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                          <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img src="img/background1.jpg" alt="bKash" style="width:100%; height:100%;">
+                          </div>
+
+                          <div class="item">
+                            <img src="img/background2.jpg" alt="Gift" style="width:100%; height:100%;">
+                          </div>
+
+                          <div class="item">
+                            <img src="img/background3.jpg" alt="Islamic" style="width:100%; height:100%;">
+                          </div>
+                            
+                          <div class="item">
+                            <img src="img/background4.jpg" alt="Mama Bari" style="width:100%; height:100%;">
+                          </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

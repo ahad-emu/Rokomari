@@ -1,0 +1,64 @@
+[class*='col-']
+{
+   border: 1px solid red;
+}
+.header_height{
+    margin-top: 20px; height: 60px;
+}
+#input_search{
+    height:45px ; width:605px;  border: 1px solid black; border-bottom: 3px solid #FF9900;
+}
+div.input{ 
+    float: left;
+}
+.fa-search{
+    font-size:30px; color: white;
+}
+.fa-shopping-cart{
+    font-size: 40px; margin-left: 30px;
+}
+.search_button{
+    height:45px; width:50px; background-color: #0397D3; border-radius: 2px;
+}
+.button-cart{
+    margin-top: 5px; height: 40px; width: 80px;
+}
+.button-cart:hover{
+    background-color: #33CD4D;  
+}
+.menu_one a{ 
+    font-size: 20px; color:black;
+}
+.menu_bar a:hover{
+    color: #89C4F4;
+}
+.menu_one li:first-child{
+    margin-left: 22%;
+}
+.menu_bar_two{
+    padding: 10px 0px 0px 0px;
+}
+.menu_bar_two a{
+    font-size: 17px; color: #000;
+}
+.menu_bar_two a:hover{
+    color: #89C4F4; text-decoration: none;
+}
+.hide_one{
+    height: 270px; width:100%; display: none;
+}
+.list_one{
+    margin : 0; padding: 0;
+}
+.list_one li{
+    margin: 7px 0px;
+}
+.list_one a{
+    font-size: 16px; color: black;
+}
+.list_one a:hover{
+    color: #89C4F4;
+}
+.background_image{
+    height: 290px; 
+}
